@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+   <title><%= htmlWebpackPlugin.options.title %></title>
+
+   <!-- 使用CDN加速的CSS文件，配置在vue.config.js下 -->
+   <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.css) { %>
+   <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="preload" as="style">
+   <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="stylesheet">
+   <% } %>
+</head>
+
+<body>
+   <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+         Please enable it to continue.</strong>
+   </noscript>
+   <div id="app"></div>
+   <!-- 使用CDN加速的JS文件，配置在vue.config.js下 -->
+   <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) { %>
+   <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+   <% } %>
+
+   <script>
+      var _hmt = _hmt || [];
+      (function () {
+         var hm = document.createElement("script");
+         hm.src = "https://hm.baidu.com/hm.js?aa2b0c91648b309c1474afbe32877a1f";
+         var s = document.getElementsByTagName("script")[0];
+         s.parentNode.insertBefore(hm, s);
+      })();
+
+      // 控制上传的条件 https://tongji.baidu.com/web/help/article?id=324&type=0
+      _hmt.push(['_requirePlugin', 'UrlChangeTracker', {
+         shouldTrackUrlChange: function (newPath, oldPath) {
+            return false;
+         }
+      }]);
+   </script>
+
+</body>
+
+</html>

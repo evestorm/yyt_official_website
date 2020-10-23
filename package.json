@@ -1,0 +1,38 @@
+{
+  "name": "vuecli3-base-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:report": "vue-cli-service build --report"
+  },
+  "dependencies": {
+    "async-validator": "^3.4.0",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.16.0",
+    "core-js": "^3.6.5",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "qs": "^6.9.4",
+    "vue": "^2.6.11",
+    "vue-amap": "^0.5.10",
+    "vue-meta": "^2.4.0",
+    "vue-progressbar": "^0.7.5",
+    "vue-router": "^3.2.0",
+    "vue-toasted": "^1.1.28",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "image-webpack-loader": "^6.0.0",
+    "node-sass": "^4.12.0",
+    "postcss-pxtorem": "^5.1.1",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-bundle-analyzer": "^3.8.0"
+  }
+}

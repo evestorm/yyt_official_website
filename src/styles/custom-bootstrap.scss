@@ -1,0 +1,43 @@
+// function得在 variables 之前
+// @import "~bootstrap/scss/_functions";
+// 自定义变量（node_modules/bootstrap/scss/_variables.scss 拷贝而来）
+// @import "./variables";
+// 用 bootstrap 进行编译
+// @import "~bootstrap/scss/bootstrap";
+
+// @function calcResponsePx($px, $breakpoint) {
+//    @return $px / (1920 / $breakpoint) + 'px';
+// }
+
+$sw-xs: 0;
+$sw-sm: 576px;
+$sw-md: 768px;
+$sw-lg: 992px;
+$sw-xl: 1200px;
+
+@media (min-width: $sw-xs) {
+	.res-h1 {
+		// 响应式h1标签
+		font-size: 28px;
+	}
+}
+
+@media (min-width: $sw-sm) {
+	.res-h1 {
+		font-size: 40px;
+	}
+}
+
+@media (min-width: $sw-md) {
+	.res-h1 {
+		font-size: 52px;
+	}
+}
+
+@media (min-width: $sw-lg) {
+	.res-h1 {
+		font-size: 64px;
+	}
+}
+
+$primary: #3385FF;
