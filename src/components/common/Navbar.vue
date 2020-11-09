@@ -84,7 +84,11 @@ export default {
             }, {
                title: '营销管理',
                name: 'marketing'
-            }]
+            },
+			{
+				title:'线上商城',
+				name:'ecommerce'
+			}]
          },
          {
             title: '关于我们',

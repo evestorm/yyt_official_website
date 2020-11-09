@@ -6,8 +6,8 @@
           <sup-title title="我们的产品" :shadow="true"></sup-title>
         </b-col>
       </b-row>
-      <b-row class="card-wrapper">
-        <b-col class="sw-col" xs="12" sm="6" md="3" v-for="(item, idx) in cardArr" :key="idx">
+      <b-row class="card-wrapper" align-h="center">
+        <b-col class="sw-col" xs="12" sm="6" md="2" v-for="(item, idx) in cardArr" :key="idx">
           <div
             @mouseenter="enterHandler($event, item)"
             @mouseleave="leaveHandler($event, item)"
@@ -48,7 +48,13 @@
           name: '营销管理系统',
           link: 'marketing',
           isHovered: false
-        }],
+        },
+		{
+		  icon: 'icon-xianshangdianshangpingtai',
+		  name: '线上电商平台',
+		  link: 'ecommerce',
+		  isHovered: false
+		}],
       }
     },
     methods: {

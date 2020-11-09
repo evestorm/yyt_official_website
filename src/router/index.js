@@ -10,7 +10,6 @@ function loadView(component) {
 	return () =>
 		import( /* webpackChunkName: "[request]" */ `@/views/${component}`)
 }
-
 Vue.use(VueRouter)
 
 const routes = [
@@ -99,6 +98,18 @@ const routes = [
 					metaInfo: {
 						...metaInfo,
 						title: "云于天 | 营销管理",
+					},
+					isBaiduCount: true,
+				},
+			},
+			{
+				path: "ecommerce",
+				name: "ecommerce",
+				component: loadView("Product/Ecommerce"),
+				meta: {
+					metaInfo: {
+						...metaInfo,
+						title: "云于天 | 线上平台",
 					},
 					isBaiduCount: true,
 				},

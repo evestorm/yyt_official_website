@@ -34,7 +34,7 @@ const cdn = {
 		],
 		js: [
 			"https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver", // 兼容旧浏览器
-			"https://at.alicdn.com/t/font_2002270_irvdc1go0fn.js", // iconfont字体图标
+			"https://at.alicdn.com/t/font_2002270_0n0eodjrx50a.js", // iconfont字体图标
 			"https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.runtime.min.js",
 			"https://cdn.bootcdn.net/ajax/libs/bootstrap-vue/2.6.1/bootstrap-vue.min.js",
 			"https://cdn.bootcdn.net/ajax/libs/vue-router/3.2.0/vue-router.min.js",
